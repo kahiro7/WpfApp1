@@ -9,13 +9,14 @@
 
     <Window.Resources>
         <Style TargetType="Button">
-            <Setter Property="FontSize" Value="34"/>
+            <Setter Property="FontSize" Value="39"/>
                
            <Setter Property="Margin" Value="4"/>
             <Setter Property="Background" Value="#DB897B"/>
             <Setter Property="Foreground" Value="#781414"/>
-            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="BorderThickness" Value="5"/>
             <Setter Property="BorderBrush" Value="#000000"/>
+            <Setter Property="Height" Value="110"/>
             <Setter Property="Template">
            
                      
@@ -56,10 +57,11 @@
         </Grid.RowDefinitions>
 
         
-            <TextBox Grid.ColumnSpan="4" Name="TB_Display" Text="" Height="100" Background="#5E4955" FontSize="50" VerticalAlignment="Center"
+            <TextBox Grid.ColumnSpan="4" Name="TB_Display" Text="" Height="120" Background="#5E4955" FontSize="50" VerticalAlignment="Center"
          Margin="5" IsReadOnly="True" TextAlignment="Right"/>
        
-        
+
+
         <!-- Ligne 1 : 7 8 9 / -->
         <Button Grid.Row="1" Grid.Column="0" Name="BTN_7" Content="7" Click="BTN_7_Click"/>
         <Button Grid.Row="1" Grid.Column="1" Name="BTN_8" Content="8" Click="BTN_8_Click"  />
@@ -81,14 +83,14 @@
         <!-- Ligne 4 : 0 CLR = + -->
         <Button Grid.Row="4" Grid.Column="0" Name="BTN_0" Content="0" Click="BTN_0_Click" />
         <Button Grid.Row="4" Grid.Column="1" Name="BTN_Dot" Content="CLR" Click="BTN_CLR_Click" />
-        <Button Grid.Row="4" Grid.Column="2" Name="BTN_Equal" Content="=" Click="BTN_Equal_Click" />
+        <Button Grid.Row="4" Grid.Column="2" Name="BTN_Equal" Content="=" Click="BTN_Equal_Click" Background="#D199B6"/>
         <Button Grid.Row="4" Grid.Column="3" Name="BTN_Add" Content="+" Click="BTN_Add_Click" Background="Azure"/>
 
         <!-- Ligne 5 : virgule cos tan sin  -->
         <Button Grid.Row="5" Grid.Column="0" Name="BTN_virgul" Content="," Click="BTN_virgul_Click"/>
-        <Button Grid.Row="5" Grid.Column="1" Name="BTN_Cos" Content="cos" Click="BTN_Cos_Click"/>
-        <Button Grid.Row="5" Grid.Column="2" Name="BTN_Tan" Content="tan" Click="BTN_Tan_Click"/>
-        <Button Grid.Row="5" Grid.Column="3" Name="BTN_Sin" Content="sin" Click="BTN_Sin_Click"/>
+        <Button Grid.Row="5" Grid.Column="1" Name="BTN_Cos" Content="cos" Click="BTN_Cos_Click" Background="#A68BA5"/>
+        <Button Grid.Row="5" Grid.Column="2" Name="BTN_Tan" Content="tan" Click="BTN_Tan_Click" Background="#A68BA5"/>
+        <Button Grid.Row="5" Grid.Column="3" Name="BTN_Sin" Content="sin" Click="BTN_Sin_Click" Background="#A68BA5"/>
 
     </Grid>
 
